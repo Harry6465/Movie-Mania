@@ -1,0 +1,93 @@
+img{
+   border: 2px solid #850808;
+   margin-top: 50px;
+   margin-right: 20px;
+    border-radius: 40%;
+   padding: 5px;
+   transition: transform .3s; 
+   /* used for transition timing  */
+  
+  }
+  .flex{
+    display: flex;
+  }
+ 
+  
+  img:hover{
+   transform: scale(1.2);  
+    /* used for creating that enlarging effect  */
+    box-shadow:  0px 0px 25px rgba(218, 49, 49, 0.619)
+  } 
+ 
+  .toggle{
+    position: relative;
+    background-color: red;
+    height: 80px;
+    width: 200px;
+    margin-top: 120px;
+    border-radius: 200px;
+  }
+  .toggle::after{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    left: 5px;
+    top: 5px;
+    border-radius: 50%;
+    background-color: white;
+    
+  }
+  
+  .heading1{
+   color: rgb(236, 24, 24);
+   margin: 50px;
+   display: inline-block;
+   font-size: 50px;
+   transition: transform .2s;
+  }
+  .heading1:hover{
+   transform:scale(1.02);
+   text-shadow: 0 0 10px red;
+  }
+ 
+  .heading2{
+   color: white;
+   margin: 50px;
+   display: inline-block;
+   font-size:50px;
+   transition: transform .2s;
+  }
+  .heading2:hover{
+   transform:scale(1.02);
+   text-shadow: 0 0 10px red;
+  }
+  .movielist{
+   border-collapse: collapse; 
+   /* removes the border lines */
+   margin: 25px;
+   font-size: 25px;
+   min-width: 200px;
+   border-radius:8px 8px 0px 0px;
+   overflow: hidden;
+   box-shadow: 1px 1px 20px #850808 ;
+  }
+  .movielist thead tr{
+   background-color: #850808;
+   color: white;
+   text-align: left;
+
+  }
+  .movielist th,
+  .movielist td{
+   padding: 12px 15px;
+   font-size: 20px;
+   color: white;
+  }
+  .movielist tbody tr{
+   border-bottom: 1px solid white;
+  }
+  .movielist tbody {
+   border-bottom: 5px solid #850808 ;
+   
+  }
